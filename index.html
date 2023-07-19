@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/cfaa2ad9d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">      
+</head>
+<body>
+    <div id="header"> 
+        <div class="container"> 
+            <nav> 
+                <img src="res/img/white_logo__1_removebg.png" class="logo">
+                <ul id="sidemenu"> 
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hollywood Actress</p>
+                <h1>Hi, I am <span>Angelina</span><br>jolie from Los Angeles</h1>
+            </div>
+        </div>
+    </div>
+
+ 
+<!-- -------about---------> 
+<div id="about">
+    <div class="container"> 
+        <div class="row">
+           <div class="about-col-1"> 
+            <img src="res/img/Angelina_Jolie_aboutme.png">
+           </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1> 
+                <p> Angelina Jolie is an acclaimed American actress, filmmaker, 
+                and humanitarian. With a career spanning decades, she has delivered powerful
+                 performances in films and received numerous awards. Beyond her acting prowess, 
+                 Jolie is known for her extensive humanitarian work and advocacy for refugee rights,
+                  women's rights, and child welfare.</p>
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('career')">Career</p>
+                      <p class="tab-links"onclick="opentab('awards')">Awards</p>
+                      <p class="tab-links"onclick="opentab('movies')">Movies</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="career">
+                    <ul>
+                        <li> <span>Acting </span><br> 1999-2014 </li>
+                        <li> <span>Directorial debut</span><br>2014-2017</li>
+                        <li> <span>Extensive humanitarian work</span><br>beginning in the early 2000s</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="awards">
+                    <ul>
+                        <li> <span>Academy Awards</span><br>Won Best Supporting Actress for her performance in "Girl, Interrupted" (1999).</li>
+                        <li> <span>Golden Globe Awards</span><br>Won Best Supporting Actress for "Girl, Interrupted" (1999) and received the Cecil B. DeMille Award for her outstanding contributions to the entertainment industry (2018).</li>
+                        <li> <span>Screen Actors Guild Awards</span><br>Won Outstanding Performance by a Female Actor in a Supporting Role for "Girl, Interrupted" (1999) and received the Humanitarian Award for her philanthropic efforts (2015).</li>
+                        <li> <span>BAFTA Awards </span><br> Won Best Supporting Actress for "Girl, Interrupted" (1999).</li>
+                        <li> <span>Critics' Choice Movie Awards </span><br> Won Best Actress for "Changeling" (2008) and received the Joel Siegel Award for her humanitarian work (2018).</li>
+                        <li> <span>National Board of Review Awards </span><br> Won Best Breakthrough Performance for "Girl, Interrupted" (1999) and received the Freedom of Expression Award for "In the Land of Blood and Honey" (2011). </li>
+                        <li> <span>Hollywood Film Awards </span><br> Received the Hollywood Humanitarian Award in recognition of her philanthropic endeavors (2005). </li>
+                        <li> <span>Presidential Medal of Freedom </span><br> Received this prestigious honor from the United States for her humanitarian work (2014). </li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="movies">
+                    <ul>
+                        <li> <span>Main Role </span><br> 
+                            <p>1.Girl, Interrupted (1999) - Lisa Rowe</p>
+                            <p>2.Lara Croft: Tomb Raider (2001) - Lara Croft</p>
+                            <p>3.Mr. & Mrs. Smith (2005) - Jane Smith</p>
+                            <p>4.A Mighty Heart (2007) - Mariane Pearl</p>
+                            <p>5.Wanted (2008) - Fox</p>
+                            <p>6.Salt (2010) - Evelyn Salt </p>
+                            <p> 7.Maleficent (2014) - Maleficent</p>
+                            <p>8.By the Sea (2015) - Vanessa</p>
+                            <p> 9.First They Killed My Father (2017) - Director
+                            <p>10.Those Who Wish Me Dead (2021) - Hannah Faber</p> </li>
+                        <li> <span>Secondary Role</span><br>
+                            <p>1."Playing by Heart" (1998) - Meredith </p>
+                            <p>2."Sky Captain and the World of Tomorrow" (2004) - Franky Cook</p>
+                            <p>3."The Good Shepherd" (2006) - Clover Wilson</p>
+                            <p>4."The Changeling" (2008) - Christine Collins</p>
+                            <p>5."Kung Fu Panda" franchise (2008-2016) - Voice of Tigress</p>
+                            <p>6."Salt" (2010) - Evelyn Salt</p>
+                            <p>7."The Tourist" (2010) - Elise Clifton-Ward</p>
+                            <p>8."Kung Fu Panda 2" (2011) - Voice of Tigress</p>
+                            <p>9."Kung Fu Panda 3" (2016) - Voice of Tigress</p>
+                            <p>10."By the Sea" (2015) - Vanessa </p> </li>
+                        <li> <span>As a Director</span><br>
+                            <p> 1.In the Land of Blood and Honey (2011) </p>
+                            <p> 2.Unbroken (2014)</p>
+                            <p> 3.By the Sea (2015)</p>
+                            <p> 4.First They Killed My Father (2017) </p> </li>
+                    </ul>
+                  </div>
+                </div>
+        </div>
+    </div>
+</div>
+ <!-- -------services---------> 
+ <div id="services"> 
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <span class="material-icons"> perm_identity</span>
+                <h2>Acting</h2> 
+            <p>As an actress, Angelina Jolie brings compelling characters to life on screen, captivating audiences with her talent and versatility.</p>
+            <a href="#">Learn more</a>
+        </div> 
+        <div>
+            <span class="material-icons">event_seat</span>
+            <h2>Directing</h2> 
+        <p>Angelina Jolie takes on the role of a director, skillfully crafting narratives and visually stunning films that explore important social and humanitarian issues.</p>
+        <a href="#">Learn more</a>
+        </div> 
+        <div>
+            <span class="material-icons">movie_creation</span>
+        <h2>Producing</h2> 
+          <p>In her role as a producer, Angelina Jolie oversees and manages the creative and logistical aspects of film and television projects, bringing stories to fruition.</p>
+          <a href="#">Learn more</a>
+        </div> 
+        <div>
+            <span class="material-icons">work</span>
+         <h2>Philanthropy and Advocacy</h2> 
+         <p>Angelina Jolie is deeply committed to philanthropy and advocacy, using her platform and resources to promote human rights, social justice, and humanitarian causes worldwide.</p>
+         <a href="#">Learn more</a>
+         </div> 
+        <div>
+            <span class="material-icons">record_voice_over</span>
+            <h2>Public Speaking and Panel Discussions</h2> 
+        <p>Angelina Jolie engages in public speaking and participates in panel discussions, sharing her insights, experiences, and expertise on various topics, inspiring and educating audiences around the globe.</p>
+        <a href="#">Learn more</a>
+        </div> 
+        </div>
+ </div>
+ <!----------------portfolio-------------------->
+ <div id="portfolio"> 
+    <div class="container"> 
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list"> 
+            <div class="work">
+                <img src="res/img/Wanted (2008).jpg" >
+                
+            </div>
+            <div class="work">
+                <img src="res/img/girl,interrupted.jpg" >
+                
+            </div>
+            
+            <div class="work">
+                <img src="res/img/malificient.jpg" >
+               
+            </div>
+            <div class="work">
+                <img src="res/img/Salt (2010).jpg" >
+               
+            </div>
+            <div class="work">
+                <img src="res/img/Gia.jpg" >
+               
+            </div>
+            <div class="work">
+                <img src="res/img/a mighty heart.jpg" >
+              
+            </div>
+            <div class="work">
+                <img src="res/img/by the sea.jpg" >
+                
+            </div>
+            <div class="work">
+                <img src="res/img/Lara Croft Tomb Raider (2001).jpg" >
+            </div>
+        </div>
+        <a href="#" class="btn"> see more</a>
+    </div>
+ </div>
+ <!-- ------------contact----------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@example.com</p>
+              <p><i class="fa-solid fa-phone-volume"></i> 0123456789 </p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                </div>
+                <a href="res/img/Angelina Jolie about me.jpg" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit </button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+    </div> 
+    <div class="copyright"> 
+        <p>copyright <i class="fas fa-copyright"></i> Lydia. Made with Love <i class="fas fa-star fa-flip"></i> 2023</p>
+    </div>
+</div>
+
+<script>
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    } 
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    } 
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+      }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx2VS89foIXsOjgMKKyy633_yTK_xV17o8ZvcZoJ4H9wZe9qfwtY-WCVFMY1Uu5iU9KCQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+   
+</body>
+</html>
